@@ -6,10 +6,8 @@ pipeline {
     stages {
         stage('Build Docker Image') {
             steps {
-                script {
-                    // Construire l'image Docker
-                    docker.build("countryrest:dev", "-f /dockerfile/Dockerfile")
-                }
+                sh 'git clone https://github.com/GitManAmine/my-service-restful.git '
+                sh 'docker build -t my-app:dev . '
             }
         }
 
