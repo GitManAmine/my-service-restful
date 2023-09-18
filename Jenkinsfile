@@ -21,7 +21,7 @@ pipeline {
             steps{
                 sh 'docker stop my-service && docker rm my-service'
                 sh 'docker image rm my-app:dev'
-                sh 'ls'
+                sh 'sudo rm -rf my-service-restful/'
             }
         }
     }
