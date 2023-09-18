@@ -15,7 +15,7 @@ pipeline {
 
         stage('Run App'){
             steps {
-                sh 'docker run --name my-service -d -p 5000:5000 countryREST:dev'
+                sh 'docker run --name my-service -d -p 5000:5000 countryrest:dev'
             }
         }
     }
