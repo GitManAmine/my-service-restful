@@ -7,7 +7,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 sh 'git clone https://github.com/GitManAmine/my-service-restful.git '
-                sh 'docker build -t my-app:dev . '
+		sh 'cd /var/lib/docker/tmp/buildkit-mount1175077767/Dockerfile && docker build -t my-app:dev . '
             }
         }
 
