@@ -7,7 +7,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 sh 'git clone https://github.com/GitManAmine/my-service-restful.git '
-		sh 'cd /home/homelander/workspace/countryRest/my-service-restful/ && docker build -t my-app:dev . '
+		sh 'sudo cd /home/homelander/workspace/countryRest/my-service-restful/ && docker build -t my-app:dev . '
             }
         }
 
