@@ -8,7 +8,7 @@ pipeline {
             steps {
                 script {
                     // Construire l'image Docker
-                    docker.build("countryREST:dev", "-f Dockerfile .")
+                    docker.build("countryrest:dev", "-f Dockerfile .")
                 }
             }
         }
