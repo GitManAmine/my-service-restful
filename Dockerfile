@@ -7,6 +7,8 @@ WORKDIR /app
 # Copiez le fichier requirements.txt et installez les dépendances
 COPY requirements.txt .
 RUN pip install -r requirements.txt
+RUN pip install werkzeug
+RUN pip install flask
 
 # Copiez le reste de votre application dans le conteneur
 COPY . .
